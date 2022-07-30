@@ -68,11 +68,5 @@ st.subheader("Sentiment by sentences:")
 for sentence in blob.sentences:
     st.write(get_sentiment(sentence.sentiment.polarity), sentence)
 
-st.subheader("Traslate to Spanish")
-st.write(blob.translate(to="es"))
-
-st.subheader("Traslate to France")
-st.write(blob.translate(to="fr"))
-
 st.subheader(f"Spelling Correction:")
 st.write(blob.correct())
